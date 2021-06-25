@@ -5,9 +5,7 @@
 }
 
 body {
-  display: block;
-  margin: 60px auto;
-  max-width: 800px;
+  margin: 0;
 }
 
 h1,
@@ -18,21 +16,20 @@ h3 {
 }
 
 h1 {
-  display: block;
   font-size: 96px;
-  font-weight: bold;
 }
 
 h2 {
-  display: block;
   font-size: 48px;
-  font-weight: bold;
 }
 
 h3 {
-  display: block;
   font-size: 24px;
   opacity: 0.7;
+}
+
+h4 {
+  font-size: 48px;
 }
 
 .navigation-links {
@@ -54,27 +51,35 @@ h3 {
   box-shadow: var(--box-shadow);
   color: white;
 }
+
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
 
-.about-paragraphs {
+.project-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: flex-start;
+}
+
+.project-links a {
+  border-radius: 4px;
+  padding: 15px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.home-panels {
+  margin: 30px;
+}
+
+.project-panels {
   display: flex;
   margin: 30px 0;
-}
-
-.about-paragraphs p {
-  margin: 10px;
-}
-
-p {
-  background: var(--secondary-color);
-  padding: 20px;
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
 }
 
 .email-link {
@@ -85,8 +90,6 @@ p {
   text-decoration: none;
 }
 
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
+.email-link:hover {
+  text-decoration: underline;
 }
