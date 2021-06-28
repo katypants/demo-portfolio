@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 100px 0;
 }
 
 h1,
@@ -30,6 +30,11 @@ h3 {
 
 h4 {
   font-size: 48px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .navigation-links {
@@ -74,12 +79,12 @@ h4 {
 }
 
 .home-panels {
-  margin: 30px;
+  margin: 10px;
 }
 
 .project-panels {
   display: flex;
-  margin: 30px 0;
+  margin: 0;
 }
 
 .email-link {
@@ -92,4 +97,26 @@ h4 {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  body {
+    text-align: center;
+  }
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .project-links {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
 }
